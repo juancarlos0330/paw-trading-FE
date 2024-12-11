@@ -36,9 +36,9 @@ const Login = () => {
                 Forgot password?
               </a>
             </div>
-            <button type="button" className="login-btn">
+            <a href="/overview/chain" className="login-btn">
               Login
-            </button>
+            </a>
             <div className="spilt-line">
               <span>or</span>
             </div>
