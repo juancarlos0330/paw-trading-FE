@@ -1,9 +1,12 @@
 import React from "react";
 
+// import style
+import "./ChainOverview.scss";
+
 const ChainOverview = () => {
   return (
-    <div>
-      <div>Chain Overview</div>
+    <div className="chain-overview-page">
+      <div>Chain ssOverview</div>
     </div>
   );
 };

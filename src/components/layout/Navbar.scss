@@ -1,0 +1,32 @@
+.navbar-container {
+  width: 90px;
+  background-color: var(--sign-background-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 10px;
+  z-index: 10;
+
+  .navbar-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    cursor: pointer;
+
+    svg {
+      path {
+        fill: var(--title-color);
+      }
+    }
+
+    .navbar-text {
+      color: var(--color);
+      margin-left: 10px;
+      display: none;
+    }
+  }
+}
