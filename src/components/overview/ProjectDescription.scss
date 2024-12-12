@@ -21,6 +21,11 @@
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
+    position: relative;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
 
     .project-description-item-img {
       width: 300px;
@@ -28,6 +33,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      @media (max-width: 991px) {
+        width: 100%;
+      }
 
       img {
         width: 100%;
@@ -42,6 +51,11 @@
       justify-content: flex-start;
       align-items: flex-start;
       gap: 15px;
+      margin: 10px 0;
+
+      @media (max-width: 991px) {
+        margin: 0;
+      }
 
       .project-description-item-desc {
         width: 100%;

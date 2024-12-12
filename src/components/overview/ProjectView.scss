@@ -1,0 +1,124 @@
+.project-view-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .project-view-title {
+    font-size: 32px;
+    color: var(--title-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .project-view-view {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    .project-view-item {
+      display: flex;
+      width: 40%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 20px;
+      padding: 20px 30px;
+      border-radius: 16px;
+      background: linear-gradient(
+        to bottom,
+        var(--volumn-chart-top-background-color),
+        var(--volumn-chart-bottom-background-color)
+      );
+
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+
+      .project-view-item-title {
+        font-size: 24px;
+        color: var(--title-color);
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .project-view-item-content {
+        color: var(--color);
+        font-size: 22px;
+      }
+    }
+  }
+
+  .project-chart-view {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .project-chart-view-item {
+      width: 47%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+
+      .project-chart-view-item-title {
+        color: var(--title-color);
+        font-size: 24px;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      .project-chart-view-item-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        background-color: var(--sign-background-color);
+        border-radius: 16px;
+        padding: 20px 30px;
+        gap: 10px;
+
+        .project-chart-view-item-content-title {
+          font-size: 22px;
+        }
+
+        .project-chart-view-item-content-value {
+          color: var(--title-color);
+          font-weight: bold;
+          font-size: 22px;
+        }
+
+        .project-chart-view-item-content-type {
+          font-size: 22px;
+
+          span {
+            font-size: 22px;
+            color: var(--volumn-chart-plus-color);
+          }
+        }
+
+        .project-chart-view-item-content-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
