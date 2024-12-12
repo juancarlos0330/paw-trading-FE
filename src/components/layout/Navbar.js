@@ -49,11 +49,11 @@ const Navbar = () => {
         <span className="navbar-text">Dashboard</span>
       </a>
       <a
-        href="#"
-        className={`navbar-item ${urlPath === "/sss" ? "active" : ""}`}
+        href="/blogs"
+        className={`navbar-item ${urlPath === "/blogs" ? "active" : ""}`}
       >
         <FontAwesomeIcon icon={faComments} style={{ fontSize: "24px" }} />
-        <span className="navbar-text">Dashboard</span>
+        <span className="navbar-text">Blogs</span>
       </a>
       <a
         href="#"

@@ -1,0 +1,119 @@
+.project-posts-container {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .project-posts-title {
+    font-size: 22px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-posts-view {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .project-swiper {
+      width: 100%;
+      margin-bottom: 0 !important;
+
+      .swiper-slide {
+        width: 400px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-right: 40px;
+
+        @media (max-width: 991px) {
+          margin-right: 20px;
+          width: 320px !important;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .project-posts-view-item {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          border-radius: 20px;
+          cursor: pointer;
+
+          .project-posts-view-item-img {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+
+            img {
+              width: 100%;
+              border-radius: 20px 20px 0 0;
+            }
+          }
+
+          .project-posts-view-item-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 0 0 20px 20px;
+            padding: 10px 10px 15px 10px;
+
+            .project-posts-view-item-content-title {
+              font-size: 22px;
+              color: #000;
+              font-weight: bold;
+              width: 100%;
+              margin-bottom: 10px;
+            }
+
+            .project-posts-view-item-content-description {
+              font-size: 16px;
+              margin-bottom: 10px;
+              color: #000;
+            }
+
+            .project-posts-view-item-icons-group {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+
+              .project-posts-view-item-icon {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 8px;
+                flex: 1;
+                cursor: pointer;
+                color: #000;
+
+                svg {
+                  path {
+                    fill: #000;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

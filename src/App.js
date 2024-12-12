@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LayoutContainer from "./pages/layout/LayoutContainer";
 import ChainOverview from "./pages/overview/ChainOverview";
 import ProjectOverview from "./pages/overview/ProjectOverview";
+import ProjectBlog from "./pages/project/ProjectBlog";
 import AnalyticsDashboard from "./pages/dashboard/AnalyticsDashboard";
 import Login from "./pages/auth/Login";
 import Notfound from "./pages/Notfound";
@@ -22,6 +23,7 @@ const App = () => {
             exact
             element={<AnalyticsDashboard />}
           />
+          <Route path="/blogs" exact element={<ProjectBlog />} />
         </Route>
         <Route path="/*" exact element={<Notfound />} />
       </Routes>

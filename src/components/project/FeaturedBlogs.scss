@@ -1,0 +1,165 @@
+.featured-blogs-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .featured-blogs-title {
+    font-size: 24px;
+    color: var(--title-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+      content: "";
+      height: 1px;
+      background-color: var(--title-border-color);
+      flex: 1;
+      margin-left: 30px;
+      margin-right: 20%;
+    }
+  }
+
+  .featured-blogs-view {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .project-swiper {
+      width: 100%;
+      margin-bottom: 0 !important;
+
+      .swiper-slide {
+        width: 400px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-right: 40px;
+
+        @media (max-width: 991px) {
+          margin-right: 20px;
+          width: 320px !important;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .featured-blogs-view-item {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          border: 3px solid var(--title-border-color);
+          border-radius: 20px;
+          padding: 20px;
+          cursor: pointer;
+
+          .featured-blogs-view-item-profile {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .featured-blogs-view-item-profile-img {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              overflow: hidden;
+              margin-right: 15px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              img {
+                width: 100%;
+                border-radius: 50%;
+              }
+            }
+
+            .featured-blogs-view-item-profile-view {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              gap: 5px;
+
+              .featured-blogs-view-item-profile-name {
+                font-size: 20px;
+                color: var(--title-color);
+                font-weight: bold;
+                width: 100%;
+              }
+
+              .featured-blogs-view-item-profile-date {
+                font-weight: bold;
+              }
+            }
+          }
+
+          .featured-blogs-view-item-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            margin-bottom: 10px;
+
+            .featured-blogs-view-item-content-img {
+              width: 100%;
+              margin-bottom: 10px;
+
+              img {
+                width: 100%;
+                border-radius: 20px;
+              }
+            }
+
+            .featured-blogs-view-item-content-title {
+              font-size: 24px;
+              color: var(--title-color);
+              font-weight: bold;
+              width: 100%;
+              margin-bottom: 10px;
+            }
+
+            .featured-blogs-view-item-content-description {
+              font-size: 16px;
+              margin-bottom: 10px;
+            }
+
+            .featured-blogs-view-item-icons-group {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+
+              .featured-blogs-view-item-icon {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 8px;
+                flex: 1;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
