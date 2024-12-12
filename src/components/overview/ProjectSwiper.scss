@@ -11,6 +11,11 @@
     overflow: hidden;
     margin-right: 40px;
 
+    @media (max-width: 991px) {
+      margin-right: 20px;
+      width: 320px !important;
+    }
+
     &:last-child {
       margin-right: 0;
     }
@@ -53,10 +58,12 @@
         }
 
         .project-swiper-item-content {
-          font-size: 16px;
           color: var(--color);
           font-weight: bold;
           width: 100%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
       }
     }

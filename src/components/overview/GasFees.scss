@@ -21,6 +21,11 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
     .gas-fees-item {
       padding: 30px 60px;
       background: linear-gradient(
@@ -34,6 +39,14 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
+
+      @media (max-width: 991px) {
+        width: calc(50% - 10px);
+      }
+
+      @media (max-width: 624px) {
+        width: 100%;
+      }
 
       .gas-fees-item-title {
         font-size: 18px;

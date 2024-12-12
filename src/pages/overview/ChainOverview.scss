@@ -8,6 +8,10 @@
   padding: 0 30px;
   overflow-y: auto;
 
+  @media (max-width: 991px) {
+    padding: 0 10px;
+  }
+
   .title {
     font-size: 32px;
     color: var(--title-color);
@@ -35,6 +39,10 @@
     margin-bottom: 40px;
     gap: 50px;
 
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+
     .volumn-item {
       flex: 1;
       display: flex;
@@ -51,6 +59,10 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 0px;
+    }
 
     .highlighted-section-title {
       font-size: 32px;
@@ -80,6 +92,12 @@
         padding: 10px 15px;
         margin: 0 20px;
         transition: 0.3s all ease-in-out;
+
+        @media (max-width: 991px) {
+          font-size: 20px;
+          padding: 10px 15px;
+          margin: 0 5px;
+        }
 
         &.active {
           border-bottom: 3px solid var(--title-border-color);
