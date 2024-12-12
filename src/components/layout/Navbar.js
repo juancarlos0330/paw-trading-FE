@@ -19,11 +19,11 @@ const Navbar = () => {
     <div className="navbar-container">
       <a href="/overview/chain" className="navbar-item">
         <FontAwesomeIcon icon={faHouse} style={{ fontSize: "24px" }} />
-        <span className="navbar-text">Dashboard</span>
+        <span className="navbar-text">Chain</span>
       </a>
-      <a href="#" className="navbar-item">
+      <a href="/overview/project" className="navbar-item">
         <FontAwesomeIcon icon={faCircleInfo} style={{ fontSize: "24px" }} />
-        <span className="navbar-text">Dashboard</span>
+        <span className="navbar-text">Project</span>
       </a>
       <a href="#" className="navbar-item">
         <FontAwesomeIcon icon={faChartSimple} style={{ fontSize: "24px" }} />

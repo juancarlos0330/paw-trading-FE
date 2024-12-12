@@ -43,4 +43,51 @@
       align-items: center;
     }
   }
+
+  .highlighted-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .highlighted-section-title {
+      font-size: 32px;
+      color: var(--title-color);
+      font-weight: bold;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    .highlighted-section-type-view {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .highlighted-section-type-view-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 24px;
+        color: var(--title-color);
+        border-bottom: 3px solid transparent;
+        padding: 10px 15px;
+        margin: 0 20px;
+        transition: 0.3s all ease-in-out;
+
+        &.active {
+          border-bottom: 3px solid var(--title-border-color);
+        }
+        &:hover {
+          border-bottom: 3px solid var(--title-border-color);
+        }
+      }
+    }
+  }
 }
