@@ -16,10 +16,12 @@
     align-items: center;
     padding: 15px 0;
     cursor: pointer;
+    text-decoration: none;
 
     svg {
       path {
         fill: var(--title-color);
+        transition: all 0.3s ease-in-out;
       }
     }
 
@@ -27,6 +29,14 @@
       color: var(--color);
       margin-left: 10px;
       display: none;
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: var(--a-btn-color);
+        }
+      }
     }
   }
 }

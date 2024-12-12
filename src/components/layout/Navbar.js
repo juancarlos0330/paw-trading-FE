@@ -17,41 +17,41 @@ import "./Navbar.scss";
 const Navbar = () => {
   return (
     <div className="navbar-container">
-      <div className="navbar-item">
+      <a href="/overview/chain" className="navbar-item">
         <FontAwesomeIcon icon={faHouse} style={{ fontSize: "24px" }} />
         <span className="navbar-text">Dashboard</span>
-      </div>
-      <div className="navbar-item">
+      </a>
+      <a href="#" className="navbar-item">
         <FontAwesomeIcon icon={faCircleInfo} style={{ fontSize: "24px" }} />
         <span className="navbar-text">Dashboard</span>
-      </div>
-      <div className="navbar-item">
+      </a>
+      <a href="#" className="navbar-item">
         <FontAwesomeIcon icon={faChartSimple} style={{ fontSize: "24px" }} />
         <span className="navbar-text">Dashboard</span>
-      </div>
-      <div className="navbar-item">
+      </a>
+      <a href="#" className="navbar-item">
         <FontAwesomeIcon icon={faComments} style={{ fontSize: "24px" }} />
         <span className="navbar-text">Dashboard</span>
-      </div>
-      <div className="navbar-item">
+      </a>
+      <a href="#" className="navbar-item">
         <FontAwesomeIcon icon={faSun} style={{ fontSize: "24px" }} />
         <span className="navbar-text">Dashboard</span>
-      </div>
-      <div className="navbar-item">
+      </a>
+      <a href="#" className="navbar-item">
         <FontAwesomeIcon
           icon={faSquarePollVertical}
           style={{ fontSize: "24px" }}
         />
         <span className="navbar-text">Dashboard</span>
-      </div>
-      <div className="navbar-item">
+      </a>
+      <a href="#" className="navbar-item">
         <FontAwesomeIcon icon={faChartColumn} style={{ fontSize: "24px" }} />
         <span className="navbar-text">Dashboard</span>
-      </div>
-      <div className="navbar-item">
+      </a>
+      <a href="#" className="navbar-item">
         <FontAwesomeIcon icon={faAddressBook} style={{ fontSize: "24px" }} />
         <span className="navbar-text">Dashboard</span>
-      </div>
+      </a>
     </div>
   );
 };

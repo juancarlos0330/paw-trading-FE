@@ -1,0 +1,62 @@
+.gas-fees-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
+  .gas-fees-title {
+    font-size: 32px;
+    color: var(--title-color);
+    margin-bottom: 30px;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  .gas-fees-view {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .gas-fees-item {
+      padding: 30px 60px;
+      background: linear-gradient(
+        to bottom,
+        var(--volumn-chart-top-background-color),
+        var(--volumn-chart-bottom-background-color)
+      );
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      .gas-fees-item-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      .gas-fees-item-value {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--title-color);
+        margin-bottom: 20px;
+      }
+
+      .gas-fees-item-date {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--title-color);
+
+        .plus {
+          color: var(--volumn-chart-plus-color);
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

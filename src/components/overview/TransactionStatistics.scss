@@ -1,0 +1,136 @@
+.transaction-statistics-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
+  .transaction-title {
+    font-size: 32px;
+    color: var(--title-color);
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .transaction-view {
+    background-color: var(--sign-background-color);
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .transaction-type-view {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .transaction-type-item {
+        font-size: 24px;
+        color: var(--title-color);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        padding: 10px 20px;
+        border-radius: 6px;
+
+        &.active {
+          background-color: var(--background-color);
+        }
+
+        &:hover {
+          background-color: var(--background-color);
+        }
+      }
+    }
+
+    .transaction-filter-view {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .transaction-filter-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .transaction-filter-item-title {
+          color: var(--title-color);
+          margin-bottom: 5px;
+        }
+
+        .transaction-filter-item-select {
+          width: 150px;
+          padding: 8px 10px;
+          border: 1px solid var(--color);
+          border-radius: 6px;
+          outline: none;
+          font-size: 16px;
+          color: var(--color);
+          cursor: pointer;
+          background-color: transparent;
+
+          option {
+            background-color: var(--sign-background-color);
+          }
+        }
+      }
+    }
+
+    .transaction-filter-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .transaction-list-item {
+        display: flex;
+        width: 100%;
+        padding: 4px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 8px 0;
+
+        &.header {
+          background-color: var(--background-color);
+          border-radius: 4px;
+          color: var(--title-color);
+
+          .transaction-list-item-text {
+            color: var(--title-color);
+            font-weight: bold;
+          }
+        }
+
+        .transaction-list-item-text {
+          font-size: 14px;
+
+          &.white {
+            color: var(--title-color);
+            font-weight: bold;
+          }
+
+          &.blue {
+            color: var(--volumn-chart-address-color);
+          }
+
+          &.success {
+            color: var(--volumn-chart-plus-color);
+          }
+        }
+      }
+    }
+  }
+}
