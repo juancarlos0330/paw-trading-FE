@@ -1,0 +1,36 @@
+.project-circle-chart-view-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  .project-circle-chart-view-item-title {
+    color: var(--title-color);
+    font-size: 32px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .project-circle-chart-view-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    background-color: var(--sign-background-color);
+    border-radius: 16px;
+    padding: 30px 40px;
+    gap: 10px;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+
+    .project-circle-chart-view-item-content-img {
+      width: 100%;
+    }
+  }
+}

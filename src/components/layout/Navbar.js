@@ -25,7 +25,7 @@ const Navbar = () => {
         <FontAwesomeIcon icon={faCircleInfo} style={{ fontSize: "24px" }} />
         <span className="navbar-text">Project</span>
       </a>
-      <a href="#" className="navbar-item">
+      <a href="/dashboard/analytics" className="navbar-item">
         <FontAwesomeIcon icon={faChartSimple} style={{ fontSize: "24px" }} />
         <span className="navbar-text">Dashboard</span>
       </a>
