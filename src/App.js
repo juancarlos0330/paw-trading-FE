@@ -6,6 +6,7 @@ import LayoutContainer from "./pages/layout/LayoutContainer";
 import ChainOverview from "./pages/overview/ChainOverview";
 import ProjectOverview from "./pages/overview/ProjectOverview";
 import ProjectBlog from "./pages/project/ProjectBlog";
+import ProjectBlogDetail from "./pages/project/ProjectBlogDetail";
 import AnalyticsDashboard from "./pages/dashboard/AnalyticsDashboard";
 import Login from "./pages/auth/Login";
 import Notfound from "./pages/Notfound";
@@ -24,6 +25,7 @@ const App = () => {
             element={<AnalyticsDashboard />}
           />
           <Route path="/blogs" exact element={<ProjectBlog />} />
+          <Route path="/blogs/detail" exact element={<ProjectBlogDetail />} />
         </Route>
         <Route path="/*" exact element={<Notfound />} />
       </Routes>

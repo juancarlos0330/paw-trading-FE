@@ -91,7 +91,7 @@ const FeaturedBlogs = ({ title }) => {
         <Swiper pagination slidesPerView={1} className="project-swiper">
           {data.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="featured-blogs-view-item">
+              <a href="/blogs/detail" className="featured-blogs-view-item">
                 <div className="featured-blogs-view-item-profile">
                   <div className="featured-blogs-view-item-profile-img">
                     <img src={ProfileAvatarImg} alt="featured-blog-profile" />
@@ -131,7 +131,7 @@ const FeaturedBlogs = ({ title }) => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>

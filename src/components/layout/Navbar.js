@@ -50,7 +50,9 @@ const Navbar = () => {
       </a>
       <a
         href="/blogs"
-        className={`navbar-item ${urlPath === "/blogs" ? "active" : ""}`}
+        className={`navbar-item ${
+          urlPath.startsWith("/blogs") ? "active" : ""
+        }`}
       >
         <FontAwesomeIcon icon={faComments} style={{ fontSize: "24px" }} />
         <span className="navbar-text">Blogs</span>
@@ -60,7 +62,7 @@ const Navbar = () => {
         className={`navbar-item ${urlPath === "/sss" ? "active" : ""}`}
       >
         <FontAwesomeIcon icon={faSun} style={{ fontSize: "24px" }} />
-        <span className="navbar-text">Dashboard</span>
+        <span className="navbar-text">Blog Detail</span>
       </a>
       <a
         href="#"
