@@ -65,11 +65,11 @@ const Navbar = () => {
         <span className="navbar-text">Trending</span>
       </a>
       <a
-        href="#"
-        className={`navbar-item ${urlPath === "/sss" ? "active" : ""}`}
+        href="/aboutus"
+        className={`navbar-item ${urlPath === "/aboutus" ? "active" : ""}`}
       >
         <FontAwesomeIcon icon={faSun} style={{ fontSize: "24px" }} />
-        <span className="navbar-text">Dashboard</span>
+        <span className="navbar-text">About US</span>
       </a>
       <a
         href="#"
