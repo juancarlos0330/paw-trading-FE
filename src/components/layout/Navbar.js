@@ -21,14 +21,9 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
-      <a
-        href="/overview/chain"
-        className={`navbar-item ${
-          urlPath === "/overview/chain" ? "active" : ""
-        }`}
-      >
+      <a href="/" className={`navbar-item ${urlPath === "/" ? "active" : ""}`}>
         <FontAwesomeIcon icon={faHouse} style={{ fontSize: "24px" }} />
-        <span className="navbar-text">Chain</span>
+        <span className="navbar-text">Dashboard</span>
       </a>
       <a
         href="/overview/project"
@@ -82,11 +77,13 @@ const Navbar = () => {
         <span className="navbar-text">Admin Blog</span>
       </a>
       <a
-        href="#"
-        className={`navbar-item ${urlPath === "/sss" ? "active" : ""}`}
+        href="/overview/chain"
+        className={`navbar-item ${
+          urlPath === "/overview/chain" ? "active" : ""
+        }`}
       >
         <FontAwesomeIcon icon={faAddressBook} style={{ fontSize: "24px" }} />
-        <span className="navbar-text">Dashboard</span>
+        <span className="navbar-text">Chain</span>
       </a>
     </div>
   );
