@@ -1,0 +1,114 @@
+.admin-posts-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .admin-posts-title {
+    width: 100%;
+    display: flex;
+    font-size: 24px;
+    color: var(--title-border-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .admin-posts-view {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    @media (max-width: 991px) {
+      gap: 20px;
+    }
+
+    .admin-posts-view-item {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      border-radius: 12px;
+      background-color: #fff;
+      gap: 30px;
+
+      @media (max-width: 991px) {
+        width: 100%;
+        padding: 10px 15px;
+        gap: 15px;
+      }
+
+      .admin-posts-view-item-img {
+        width: 80px;
+        height: 80px;
+        display: flex;
+
+        img {
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      .admin-posts-view-item-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 1;
+        gap: 10px;
+
+        .admin-posts-view-item-content-title {
+          font-size: 24px;
+          color: #000;
+          font-weight: bold;
+          width: 100%;
+
+          @media (max-width: 991px) {
+            font-size: 20px;
+          }
+        }
+
+        .admin-posts-view-item-content-date {
+          font-size: 18px;
+          color: #000;
+          width: 100%;
+
+          @media (max-width: 991px) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .admin-posts-view-item-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          font-size: 24px;
+
+          svg {
+            font-size: inherit;
+
+            path {
+              fill: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}

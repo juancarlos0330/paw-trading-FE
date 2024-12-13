@@ -1,0 +1,114 @@
+.admin-blog-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 30px;
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .admin-blog-profile-img {
+    width: 250px;
+    display: flex;
+
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 6px;
+    }
+  }
+
+  .admin-blog-profile-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    flex: 1;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    .admin-blog-profile-name {
+      font-size: 24px;
+      color: var(--title-color);
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .admin-blog-profile-intro {
+      font-size: 16px;
+      width: 100%;
+      line-height: 24px;
+    }
+
+    .admin-blog-profile-follow {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+
+      .admin-blog-profile-follow-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 8px 12px;
+        gap: 5px;
+
+        &:first-child {
+          padding: 8px 12px 8px 0;
+        }
+
+        .admin-blog-profile-follow-item-count {
+          font-size: 18px;
+          color: var(--title-color);
+          font-weight: bold;
+        }
+
+        .admin-blog-profile-follow-item-text {
+        }
+      }
+    }
+
+    .admin-blog-profile-call {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 15px;
+
+      .admin-blog-profile-call-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 15px;
+        border-radius: 4px;
+        background-color: var(--admin-call-background-color);
+        color: var(--title-color);
+        text-decoration: none;
+        gap: 10px;
+
+        svg {
+          path {
+            fill: var(--title-color);
+          }
+        }
+      }
+    }
+  }
+}
