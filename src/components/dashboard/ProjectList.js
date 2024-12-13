@@ -36,7 +36,11 @@ const ProjectList = () => {
       <div className="project-list-table">
         {data.map((item, key) => {
           return (
-            <div className="project-list-table-item" key={key}>
+            <a
+              href="/blogs/detail"
+              className="project-list-table-item"
+              key={key}
+            >
               <div className="project-list-table-item-pair">
                 <FontAwesomeIcon icon={faStar} />1
                 <FontAwesomeIcon icon={faUser} />
@@ -63,7 +67,7 @@ const ProjectList = () => {
               <div className="project-list-table-item-24hvolumn">$1.03 M</div>
               <div className="project-list-table-item-24hvolumn">$41.03 K</div>
               <div className="project-list-table-item-24h">$400.03 K</div>
-            </div>
+            </a>
           );
         })}
       </div>
