@@ -46,7 +46,7 @@ const Navbar = ({ collapsed, setCollapsed }) => {
           }`}
         >
           <FontAwesomeIcon icon={faChartSimple} style={{ fontSize: "24px" }} />
-          <span className="navbar-text">Dashboard</span>
+          <span className="navbar-text">Chart</span>
         </a>
         <a
           href="/blogs"
@@ -125,7 +125,7 @@ const Navbar = ({ collapsed, setCollapsed }) => {
           }`}
         >
           <FontAwesomeIcon icon={faChartSimple} style={{ fontSize: "24px" }} />
-          <span className="navbar-text">Dashboard</span>
+          <span className="navbar-text">Chart</span>
         </a>
         <a
           href="/blogs"
