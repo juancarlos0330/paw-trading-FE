@@ -7,6 +7,10 @@
   align-items: center;
   gap: 30px;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   .dashboard-card-item {
     flex: 1;
     height: 250px;
@@ -17,6 +21,12 @@
     flex-direction: column;
     padding: 15px;
     gap: 10px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: fit-content;
+      flex: none;
+    }
 
     .dashboard-card-type {
       width: 100%;
