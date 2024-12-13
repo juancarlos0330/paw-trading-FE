@@ -1,0 +1,88 @@
+.trending-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(100vh - 90px);
+  width: 100%;
+  padding: 0 30px;
+  overflow-y: auto;
+
+  @media (max-width: 991px) {
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 32px;
+    color: var(--title-color);
+    font-weight: bold;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title::after {
+    content: "";
+    width: 135px;
+    height: 3px;
+    background-color: var(--title-border-color);
+    margin-top: 10px;
+  }
+
+  .trending-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 0px;
+    }
+
+    .trending-section-title {
+      font-size: 24px;
+      color: var(--title-border-color);
+      font-weight: bold;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    .trending-section-other-title {
+      font-size: 32px;
+      color: var(--title-color);
+      font-weight: bold;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
+
+  .trending-gainer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .trending-gainer-section-title {
+      font-size: 24px;
+      color: var(--title-border-color);
+      font-weight: bold;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    .trending-gainer-card-view {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+}

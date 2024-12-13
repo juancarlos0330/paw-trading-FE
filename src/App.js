@@ -8,6 +8,7 @@ import ProjectOverview from "./pages/overview/ProjectOverview";
 import ProjectBlog from "./pages/project/ProjectBlog";
 import ProjectBlogDetail from "./pages/project/ProjectBlogDetail";
 import AnalyticsDashboard from "./pages/dashboard/AnalyticsDashboard";
+import Trending from "./pages/overview/Trending";
 import Login from "./pages/auth/Login";
 import Notfound from "./pages/Notfound";
 
@@ -26,6 +27,7 @@ const App = () => {
           />
           <Route path="/blogs" exact element={<ProjectBlog />} />
           <Route path="/blogs/detail" exact element={<ProjectBlogDetail />} />
+          <Route path="/trending" exact element={<Trending />} />
         </Route>
         <Route path="/*" exact element={<Notfound />} />
       </Routes>

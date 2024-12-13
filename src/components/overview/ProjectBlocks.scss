@@ -1,0 +1,100 @@
+.project-blocks-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .project-blocks-title {
+    font-size: 32px;
+    color: var(--title-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .project-blocks-subtitle {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .project-blocks-view {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    .project-blocks-item {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 40px;
+      border-radius: 20px;
+      border: 2px solid var(--color);
+      gap: 30px;
+
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .project-blocks-item-img {
+        width: 40%;
+        display: flex;
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 20px;
+        }
+      }
+
+      .project-blocks-item-content {
+        flex: 1;
+        display: flex;
+        padding: 20px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        @media (max-width: 768px) {
+          padding: 0;
+        }
+
+        .project-blocks-item-content-title {
+          font-size: 28px;
+          font-weight: bold;
+          color: var(--title-color);
+          margin-bottom: 20px;
+        }
+
+        .project-blocks-item-content-text {
+          font-size: 24px;
+          width: 100%;
+          margin-bottom: 15px;
+        }
+
+        .project-blocks-item-content-link {
+          font-size: 20px;
+          text-decoration: none;
+          color: var(--title-color);
+          border: 1px solid var(--title-color);
+          padding: 10px 20px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

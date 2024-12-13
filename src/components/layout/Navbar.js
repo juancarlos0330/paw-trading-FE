@@ -58,11 +58,18 @@ const Navbar = () => {
         <span className="navbar-text">Blogs</span>
       </a>
       <a
+        href="/trending"
+        className={`navbar-item ${urlPath === "/trending" ? "active" : ""}`}
+      >
+        <FontAwesomeIcon icon={faChartColumn} style={{ fontSize: "24px" }} />
+        <span className="navbar-text">Trending</span>
+      </a>
+      <a
         href="#"
         className={`navbar-item ${urlPath === "/sss" ? "active" : ""}`}
       >
         <FontAwesomeIcon icon={faSun} style={{ fontSize: "24px" }} />
-        <span className="navbar-text">Blog Detail</span>
+        <span className="navbar-text">Dashboard</span>
       </a>
       <a
         href="#"
@@ -72,13 +79,6 @@ const Navbar = () => {
           icon={faSquarePollVertical}
           style={{ fontSize: "24px" }}
         />
-        <span className="navbar-text">Dashboard</span>
-      </a>
-      <a
-        href="#"
-        className={`navbar-item ${urlPath === "/sss" ? "active" : ""}`}
-      >
-        <FontAwesomeIcon icon={faChartColumn} style={{ fontSize: "24px" }} />
         <span className="navbar-text">Dashboard</span>
       </a>
       <a

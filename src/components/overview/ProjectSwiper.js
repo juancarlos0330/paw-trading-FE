@@ -77,7 +77,7 @@ const ProjectSwiper = () => {
       <Swiper pagination slidesPerView={1} className="project-swiper">
         {data.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="project-swiper-item">
+            <a href="/blogs/detail" className="project-swiper-item">
               <div className="project-swiper-item-content">
                 <img
                   src={item.img}
@@ -89,7 +89,7 @@ const ProjectSwiper = () => {
                   {item.content}
                 </div>
               </div>
-            </div>
+            </a>
           </SwiperSlide>
         ))}
       </Swiper>
