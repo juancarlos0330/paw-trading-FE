@@ -1,0 +1,205 @@
+.dashboard-card-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  .dashboard-card-item {
+    flex: 1;
+    height: 250px;
+    overflow: auto;
+    border-radius: 20px;
+    border: 1px solid var(--admin-call-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+
+    .dashboard-card-type {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .dashboard-card-type-view {
+        display: flex;
+        flex-direction: row;
+        padding: 8px 10px;
+        border-radius: 6px;
+        border: 1px solid var(--admin-call-background-color);
+
+        .dashboard-card-type-view-item {
+          display: flex;
+          margin: 0 15px;
+          cursor: pointer;
+
+          &.active {
+            color: var(--title-color);
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            &::after {
+              content: "";
+              height: 1px;
+              width: 60px;
+              background-color: var(--color);
+            }
+          }
+        }
+      }
+
+      .dashboard-card-type-more-btn {
+        text-decoration: none;
+        color: var(--title-color);
+      }
+    }
+
+    .dashboard-card-trans-view {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+
+      .dashboard-card-trans-view-item {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .dashboard-card-trans-view-item-no {
+          background-color: var(--no-background-color);
+          padding: 2px 3px;
+          border-radius: 2px;
+          font-size: 14px;
+        }
+
+        .dashboard-card-trans-view-item-img {
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+        }
+
+        .dashboard-card-trans-view-item-project {
+          font-size: 14px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+
+        .dashboard-card-trans-view-item-amount {
+          font-size: 14px;
+        }
+
+        .dashboard-card-trans-view-item-increase {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .dashboard-card-title {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .dashboard-card-title-view {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .dashboard-card-title-view-title {
+          font-size: 18px;
+          font-weight: bold;
+          color: var(--title-color);
+          margin-bottom: 2px;
+        }
+
+        .dashboard-card-title-view-subtext {
+          font-size: 12px;
+        }
+      }
+
+      .dashboard-card-type-more-btn {
+        text-decoration: none;
+        color: var(--title-color);
+      }
+    }
+
+    .dashboard-card-project-view {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+
+      .dashboard-card-project-view-item {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .dashboard-card-project-view-item-img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+        }
+
+        .dashboard-card-project-view-item-project {
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        .dashboard-card-trans-view-item-date {
+          font-size: 14px;
+        }
+
+        .dashboard-card-trans-view-item-increase {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .dashboard-card-project-btn {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+
+      button {
+        padding: 8px 12px;
+        border-radius: 50px;
+        background-color: var(--title-border-color);
+        color: var(--title-color);
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
