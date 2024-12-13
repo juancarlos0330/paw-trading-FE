@@ -12,6 +12,7 @@ import AnalyticsDashboard from "./pages/dashboard/AnalyticsDashboard";
 import Trending from "./pages/overview/Trending";
 import AboutUs from "./pages/AboutUs";
 import AdminBlog from "./pages/project/AdminBlog";
+import ProjectDetail from "./pages/dashboard/ProjectDetail";
 import Login from "./pages/auth/Login";
 import Notfound from "./pages/Notfound";
 
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/trending" exact element={<Trending />} />
           <Route path="/aboutus" exact element={<AboutUs />} />
           <Route path="/admin-blog" exact element={<AdminBlog />} />
+          <Route path="/project/detail" exact element={<ProjectDetail />} />
         </Route>
         <Route path="/*" exact element={<Notfound />} />
       </Routes>

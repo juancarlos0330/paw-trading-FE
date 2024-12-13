@@ -37,7 +37,7 @@ const ProjectList = () => {
         {data.map((item, key) => {
           return (
             <a
-              href="/blogs/detail"
+              href="/project/detail"
               className="project-list-table-item"
               key={key}
             >
