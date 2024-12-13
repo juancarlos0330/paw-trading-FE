@@ -5,8 +5,12 @@
   align-items: center;
   height: calc(100vh - 90px);
   width: 100%;
-  padding: 0 30px;
+  padding: 0 30px 0 120px;
   overflow-y: auto;
+
+  @media (max-width: 991px) {
+    padding: 0 10px;
+  }
 
   .title {
     font-size: 32px;

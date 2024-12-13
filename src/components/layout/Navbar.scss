@@ -8,6 +8,20 @@
   align-items: center;
   padding: 40px 10px;
   z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  &:hover {
+    width: 250px;
+    padding: 40px 30px;
+    align-items: flex-start;
+
+    .navbar-text {
+      display: flex !important;
+    }
+  }
 
   @media (max-width: 991px) {
     display: none;
@@ -19,8 +33,8 @@
     justify-content: center;
     align-items: center;
     padding: 15px 0;
-    cursor: pointer;
     text-decoration: none;
+    cursor: pointer;
 
     &.active {
       svg {
@@ -28,9 +42,15 @@
           fill: var(--a-btn-color);
         }
       }
+
+      .navbar-text {
+        color: var(--a-btn-color);
+      }
     }
 
     svg {
+      width: 32px;
+
       path {
         fill: var(--title-color);
         transition: all 0.3s ease-in-out;
@@ -41,6 +61,8 @@
       color: var(--color);
       margin-left: 10px;
       display: none;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
     }
 
     &:hover {
@@ -48,6 +70,10 @@
         path {
           fill: var(--a-btn-color);
         }
+      }
+
+      .navbar-text {
+        color: var(--a-btn-color);
       }
     }
   }
