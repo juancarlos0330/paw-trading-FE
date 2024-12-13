@@ -1,0 +1,136 @@
+.project-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .project-list-type {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid var(--admin-call-background-color);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      padding: 20px 5px;
+    }
+
+    .project-list-type-item {
+      font-size: 16px;
+      cursor: pointer;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .project-list-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    .project-list-table-item {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .project-list-table-item-pair {
+        gap: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 13px;
+
+        svg {
+          font-size: 13px;
+        }
+
+        .project-list-table-item-pair-desc {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 2px;
+          width: 100%;
+
+          @media (max-width: 768px) {
+            display: none;
+          }
+
+          .project-name {
+            font-size: 14px;
+            font-weight: bold;
+            width: 100%;
+          }
+
+          .username {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .project-list-table-item-img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+
+      .project-list-table-item-price {
+        font-size: 14px;
+      }
+
+      .project-list-table-item-1h {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        gap: 5px;
+
+        svg {
+          font-size: 16px;
+        }
+      }
+
+      .project-list-table-item-24h {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        gap: 5px;
+      }
+
+      .project-list-table-item-24hvolumn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        gap: 5px;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

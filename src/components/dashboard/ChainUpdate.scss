@@ -1,0 +1,112 @@
+.chain-update-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  gap: 20px;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+
+  .chain-update-view {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media (max-width: 991px) {
+      width: 100%;
+      flex: none;
+      order: 1;
+    }
+
+    .chain-update-view-title {
+      font-size: 24px;
+      color: var(--title-color);
+      font-weight: bold;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .chain-update-view-content {
+      width: 100%;
+      border: 1px solid var(--admin-call-background-color);
+      border-radius: 10px;
+      padding: 20px 25px;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+
+      .chain-update-view-content-item {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .chain-update-view-content-item-img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+
+        .chain-update-view-content-item-desc {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          margin-left: 10px;
+          gap: 5px;
+
+          .chain-update-view-content-item-desc-title {
+            font-size: 24px;
+            color: var(--title-color);
+          }
+
+          .chain-update-view-content-item-desc-text {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .chain-update-usage-view {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media (max-width: 991px) {
+      width: 100%;
+      flex: none;
+    }
+
+    .chain-update-usage-view-title {
+      font-size: 24px;
+      color: var(--title-color);
+      font-weight: bold;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .chain-update-usage-view-content {
+      width: 100%;
+      border: 1px solid var(--admin-call-background-color);
+      border-radius: 10px;
+      padding: 20px 25px;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
