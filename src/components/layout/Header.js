@@ -2,14 +2,17 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // import icons
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { faGear } from "@fortawesome/free-solid-svg-icons";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMagnifyingGlass,
+  faGear,
+  faStar,
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
 
 // import style
 import "./Header.scss";
 
-const Header = () => {
+const Header = ({ collapsed, setCollapsed }) => {
   return (
     <div className="header-container">
       <div className="view-all">
@@ -22,6 +25,12 @@ const Header = () => {
         <input type="text" placeholder="Search here" />
       </div>
       <div className="manage-section">
+        <div
+          className="manage-bars-item"
+          onClick={() => setCollapsed(!collapsed)}
+        >
+          <FontAwesomeIcon icon={faBars} />
+        </div>
         <div className="manage-item">
           <FontAwesomeIcon icon={faGear} />
         </div>

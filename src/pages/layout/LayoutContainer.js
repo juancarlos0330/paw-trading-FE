@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 
 // import components
@@ -9,11 +9,13 @@ import Header from "../../components/layout/Header";
 import "./LayoutContainer.scss";
 
 const LayoutContainer = () => {
+  const [collapsed, setCollapsed] = useState(false);
+
   return (
     <div className="layout-container">
-      <Navbar />
+      <Navbar collapsed={collapsed} setCollapsed={setCollapsed} />
       <div className="main-container">
-        <Header />
+        <Header collapsed={collapsed} setCollapsed={setCollapsed} />
         <Outlet />
       </div>
     </div>

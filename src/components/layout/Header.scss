@@ -66,6 +66,33 @@
     align-items: center;
     gap: 10px;
 
+    .manage-bars-item {
+      display: none;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      @media (max-width: 991px) {
+        display: flex;
+      }
+
+      svg {
+        path {
+          fill: var(--title-color);
+        }
+      }
+
+      .manage-login-btn {
+        text-decoration: none;
+        cursor: pointer;
+        padding: 8px 20px;
+        border-radius: 6px;
+        color: var(--title-color);
+        box-shadow: inset 0px 1px 10px #454256;
+      }
+    }
+
     .manage-item {
       display: flex;
       flex-direction: row;
