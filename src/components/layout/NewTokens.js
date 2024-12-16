@@ -156,7 +156,13 @@ const NewTokens = () => {
         },
       },
       {
-        breakpoint: 446,
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 460,
         settings: {
           slidesToShow: 1,
         },
