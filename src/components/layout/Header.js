@@ -21,8 +21,13 @@ const Header = ({ collapsed, setCollapsed }) => {
         </button>
       </div>
       <div className="search-header">
-        <FontAwesomeIcon icon={faMagnifyingGlass} />
-        <input type="text" placeholder="Search here" />
+        <div className="search-header-icon">
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
+        </div>
+        <input
+          type="text"
+          placeholder="Search by Name / Symbol / Token / Contract"
+        />
       </div>
       <div className="manage-section">
         <div
