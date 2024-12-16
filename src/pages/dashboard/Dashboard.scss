@@ -29,4 +29,20 @@
     background-color: var(--title-border-color);
     margin-top: 10px;
   }
+
+  .dashboard-page-notice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 30px;
+    font-size: 20px;
+
+    a {
+      text-decoration: none;
+      color: var(--title-border-color);
+      font-size: 20px;
+    }
+  }
 }

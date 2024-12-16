@@ -19,7 +19,11 @@ const Dashboard = () => {
       <TrendingProject />
       {/* <ProjectCard /> */}
       <ChainUpdate />
-      <ProjectList />
+      {/* <ProjectList /> */}
+      <div className="dashboard-page-notice">
+        Could you please move it to
+        <a href="#">where referenced above?</a>
+      </div>
       <ProjectNews />
     </div>
   );
