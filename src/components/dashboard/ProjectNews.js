@@ -1,5 +1,8 @@
 import React from "react";
 
+// import components
+import ProjectCard from "./ProjectCard";
+
 // import assets
 import ProjectBlogImg from "../../assets/image/project/project_card.png";
 import FacebookImg from "../../assets/image/social/facebook.png";
@@ -74,7 +77,7 @@ const ProjectNews = () => {
       </div> */}
       <div className="project-news-blog">
         <div className="project-news-blog-title">Recent Blog Posts</div>
-        <div className="project-news-blog-view">
+        {/* <div className="project-news-blog-view">
           <a href="#" className="project-news-blog-view-item">
             <img src={ProjectBlogImg} alt="blog" />
           </a>
@@ -84,7 +87,8 @@ const ProjectNews = () => {
           <a href="#" className="project-news-blog-view-item">
             <img src={ProjectBlogImg} alt="blog" />
           </a>
-        </div>
+        </div> */}
+        <ProjectCard />
         <div className="project-news-blog-description">
           The information available on our website, as well as on linked
           websites, applications, forums, blogs, social media accounts, and

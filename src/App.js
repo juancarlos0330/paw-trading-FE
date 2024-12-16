@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import pages
 import LayoutContainer from "./pages/layout/LayoutContainer";
 import Dashboard from "./pages/dashboard/Dashboard";
+import Projects from "./pages/project/Projects";
 import ChainOverview from "./pages/overview/ChainOverview";
 import ProjectOverview from "./pages/overview/ProjectOverview";
 import ProjectBlog from "./pages/project/ProjectBlog";
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/login" exact element={<Login />} />
         <Route element={<LayoutContainer />}>
           <Route path="/" exact element={<Dashboard />} />
+          <Route path="/projects" exact element={<Projects />} />
           <Route path="/overview/chain" exact element={<ChainOverview />} />
           <Route path="/overview/project" exact element={<ProjectOverview />} />
           <Route

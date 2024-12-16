@@ -31,10 +31,8 @@ const Navbar = ({ collapsed, setCollapsed }) => {
           <span className="navbar-text">Dashboard</span>
         </a>
         <a
-          href="/overview/project"
-          className={`navbar-item ${
-            urlPath === "/overview/project" ? "active" : ""
-          }`}
+          href="/projects"
+          className={`navbar-item ${urlPath === "/projects" ? "active" : ""}`}
         >
           <FontAwesomeIcon icon={faCircleInfo} style={{ fontSize: "24px" }} />
           <span className="navbar-text">Project</span>
