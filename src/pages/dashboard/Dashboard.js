@@ -17,7 +17,7 @@ const Dashboard = () => {
       <div className="title">Dashboard</div>
       <DashboardCard />
       <TrendingProject />
-      <ProjectCard />
+      {/* <ProjectCard /> */}
       <ChainUpdate />
       <ProjectList />
       <ProjectNews />

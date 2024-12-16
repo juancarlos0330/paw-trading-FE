@@ -45,21 +45,15 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
-
-        .chain-update-view-content-item-img {
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-        }
+        cursor: pointer;
 
         .chain-update-view-content-item-desc {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: flex-start;
-          margin-left: 10px;
           gap: 5px;
 
           .chain-update-view-content-item-desc-title {
@@ -70,6 +64,11 @@
           .chain-update-view-content-item-desc-text {
             font-size: 14px;
           }
+        }
+
+        .chain-update-view-content-item-timestamp {
+          font-size: 14px;
+          font-weight: bold;
         }
       }
     }
