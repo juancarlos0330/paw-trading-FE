@@ -13,7 +13,7 @@ import "./ProjectNews.scss";
 const ProjectNews = () => {
   return (
     <div className="project-news-container">
-      <div className="project-news-header">
+      {/* <div className="project-news-header">
         <div className="project-news-header-big">
           <div className="project-news-title">
             Get news about cryptocurrencies every day!
@@ -71,7 +71,7 @@ const ProjectNews = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="project-news-blog">
         <div className="project-news-blog-title">Recent Blog Posts</div>
         <div className="project-news-blog-view">
